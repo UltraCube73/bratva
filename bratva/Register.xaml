@@ -1,0 +1,36 @@
+﻿<Window x:Class="bratva.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:bratva"
+        mc:Ignorable="d"
+        Title="Register" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1" Text="Регистрация" FontSize="20" HorizontalAlignment="Center"/>
+        <TextBlock Grid.Column="1" Grid.Row="2" Text="Логин"/>
+        <TextBlock Grid.Column="1" Grid.Row="3" Text="Пароль"/>
+        <TextBlock Grid.Column="1" Grid.Row="4" Text="Почта"/>
+        <TextBox x:Name="logintext" Grid.Column="2" Grid.Row="2"/>
+        <TextBox x:Name="passwordtext" Grid.Column="2" Grid.Row="3"/>
+        <TextBox x:Name="mailtext" Grid.Column="2" Grid.Row="4"/>
+        <Button x:Name="registerbutton" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="5" Content="Зарегистрироваться" Click="registerbutton_Click"/>
+        <Button x:Name="loginbutton" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="6" Content="Назад" Click="loginbutton_Click"/>
+    </Grid>
+</Window>
